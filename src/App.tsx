@@ -21,10 +21,11 @@ function App() {
     loadPokemon()
     console.log(pokemon)
   },[inputName])
+  console.log(pokemon?.stats)
     return (
       <div className="h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500 flex flex-col justify-center items-center">
         {pokemon && 
-          <Pokemon name={pokemon.name} id={pokemon.id} types={pokemon.types} image={pokemon.image}/>
+          <Pokemon name={pokemon.name} id={pokemon.id} types={pokemon.types} image={pokemon.image} stats={pokemon.stats}/>
 
         }
         
