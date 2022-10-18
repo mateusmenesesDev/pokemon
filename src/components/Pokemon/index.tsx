@@ -2,7 +2,7 @@ import IPokemon from "../../types/IPokemon";
 import { Input } from "../Input";
 
 
-export function Pokemon({name, id, types, image}:IPokemon){
+export function Pokemon({name='Informe', types, image}:IPokemon){
     return (
         <div className="">
             <div className="">
