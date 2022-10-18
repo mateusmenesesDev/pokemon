@@ -9,11 +9,6 @@ import IPokemon from './types/IPokemon'
 
 function App() {
   const[pokemon, setPokemon] = useState<IPokemon|null>(null)
- 
-
-
-  const basePokemonImage = `https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/${String(pokemon?.id).padStart(3,'0')}.png`
-  console.log(basePokemonImage)
   
   async function loadPokemon(){
     const pokemon = await pokemonCalls.getPokemon()
@@ -26,7 +21,7 @@ function App() {
     return (
       <div className="h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500 flex justify-center items-center">
         {pokemon && 
-          <Pokemon name={pokemon.name} id={pokemon.id} types={pokemon.types} />
+          <Pokemon name={pokemon.name} id={pokemon.id} types={pokemon.types} image={pokemon.image}/>
         }
       </div>
   );
