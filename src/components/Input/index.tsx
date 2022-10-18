@@ -12,7 +12,7 @@ export function Input({name, setInputName}:props){
         <div>
             <label>
                 Pesquise o seu Pokemon
-                <input type='text' value={name} onChange={handleChange}></input>
+                <input type='text' value={name} onChange={handleChange}/>
             </label>
         </div>
     )

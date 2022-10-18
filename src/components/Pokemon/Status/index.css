@@ -1,0 +1,22 @@
+input[type='range']{
+    background: rgb(0,212,255);
+    background: linear-gradient(267deg, rgba(0,212,255,1) 17%, rgba(9,9,121,1) 96%);
+    border-radius: 25px;
+    width: 100%;
+
+    -webkit-appearance: none;
+}
+/* input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: blue;
+  } */
